@@ -6,28 +6,53 @@
 //
 
 import UIKit
+import CoreData
 
 class MainController: UIViewController {
-    
+    private(set) var managedObjectContext: NSManagedObjectContext
     let splashView = SplashView()
     
-
+    init(context: NSManagedObjectContext) {
+        managedObjectContext = context
+        super.init(nibName: nil, bundle: nil)
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         splashView.animateView {
-            //self.initialController()
+            self.initialController()
         }
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        view.backgroundColor = .systemGreen
-        setup()
+    
+    private func initialController() {
+        if existSession() {
+            showHomeController()
+        } else {
+            let signInController = SignInViewController(context: managedObjectContext)
+            signInController.modalPresentationStyle = .fullScreen
+            signInController.delegate = self
+            present(signInController, animated: false)
+        }
     }
     
+    private func existSession() -> Bool {
+        guard let _ = UserDefaults.standard.object(forKey: "username"),
+              let _ = UserDefaults.standard.object(forKey: "password") else {
+                  return false
+              }
+        return true
+    }
     
+    private func showHomeController() {
+        let tabBar = TabBarController(context: managedObjectContext)
+        tabBar.modalPresentationStyle = .fullScreen
+        present(tabBar, animated: false)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
     
     private func setup() {
         view.backgroundColor = UIColor.systemBackground
@@ -41,6 +66,14 @@ class MainController: UIViewController {
         ])
     }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
 
+extension MainController: SignInDelegate {
+    func signInComplete() {
+        showHomeController()
+    }
 }
 

@@ -12,6 +12,13 @@
 		C7935AE727D82CAC00AC9457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7935AE627D82CAC00AC9457 /* Assets.xcassets */; };
 		C7935AEA27D82CAC00AC9457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7935AE827D82CAC00AC9457 /* LaunchScreen.storyboard */; };
 		C7935B0527D9C1B300AC9457 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935B0427D9C1B300AC9457 /* SplashView.swift */; };
+		C7935B0A27D9D21100AC9457 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935B0927D9D21100AC9457 /* OnboardingViewController.swift */; };
+		C7935B0C27D9D35100AC9457 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935B0B27D9D35100AC9457 /* TabBarController.swift */; };
+		C7935B0F27D9D44100AC9457 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935B0E27D9D44100AC9457 /* SignInViewController.swift */; };
+		C7935B1127D9D47000AC9457 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935B1027D9D47000AC9457 /* SignUpViewController.swift */; };
+		C7935B1527D9D51C00AC9457 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935B1427D9D51B00AC9457 /* LoginViewModel.swift */; };
+		C7935B1727D9D5A700AC9457 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935B1627D9D5A700AC9457 /* SignUpView.swift */; };
+		C7935B1927D9D5BA00AC9457 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935B1827D9D5BA00AC9457 /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		C7935AE927D82CAC00AC9457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7935AEB27D82CAC00AC9457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7935B0427D9C1B300AC9457 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		C7935B0927D9D21100AC9457 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		C7935B0B27D9D35100AC9457 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C7935B0E27D9D44100AC9457 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C7935B1027D9D47000AC9457 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C7935B1427D9D51B00AC9457 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C7935B1627D9D5A700AC9457 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		C7935B1827D9D5BA00AC9457 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +68,10 @@
 		C7935ADC27D82CA900AC9457 /* BookS_MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				C7935B0227D9C03000AC9457 /* SupportFiles */,
+				C7935B0D27D9D40F00AC9457 /* Login */,
 				C7935AEB27D82CAC00AC9457 /* Info.plist */,
+				C7935B0627D9CFCF00AC9457 /* Onboarding */,
+				C7935B0227D9C03000AC9457 /* SupportFiles */,
 				C7935B0327D9C17900AC9457 /* Main */,
 			);
 			path = BookS_MVVM;
@@ -76,8 +92,45 @@
 			children = (
 				C7935AE127D82CA900AC9457 /* MainController.swift */,
 				C7935B0427D9C1B300AC9457 /* SplashView.swift */,
+				C7935B0B27D9D35100AC9457 /* TabBarController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		C7935B0627D9CFCF00AC9457 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C7935B0927D9D21100AC9457 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C7935B0D27D9D40F00AC9457 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C7935B0E27D9D44100AC9457 /* SignInViewController.swift */,
+				C7935B1027D9D47000AC9457 /* SignUpViewController.swift */,
+				C7935B1327D9D4E400AC9457 /* Views */,
+				C7935B1227D9D4D800AC9457 /* ViewModels */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C7935B1227D9D4D800AC9457 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C7935B1427D9D51B00AC9457 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C7935B1327D9D4E400AC9457 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7935B1627D9D5A700AC9457 /* SignUpView.swift */,
+				C7935B1827D9D5BA00AC9457 /* SignInView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +204,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7935AE227D82CA900AC9457 /* MainController.swift in Sources */,
+				C7935B1127D9D47000AC9457 /* SignUpViewController.swift in Sources */,
 				C7935ADE27D82CA900AC9457 /* AppDelegate.swift in Sources */,
+				C7935B0F27D9D44100AC9457 /* SignInViewController.swift in Sources */,
+				C7935B1927D9D5BA00AC9457 /* SignInView.swift in Sources */,
+				C7935B1527D9D51C00AC9457 /* LoginViewModel.swift in Sources */,
 				C7935B0527D9C1B300AC9457 /* SplashView.swift in Sources */,
+				C7935B0C27D9D35100AC9457 /* TabBarController.swift in Sources */,
+				C7935B1727D9D5A700AC9457 /* SignUpView.swift in Sources */,
+				C7935B0A27D9D21100AC9457 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
