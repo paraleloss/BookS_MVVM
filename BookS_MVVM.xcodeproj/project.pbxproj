@@ -14,6 +14,7 @@
 		C7935AFA27D998F100AC9457 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935AF927D998F100AC9457 /* API.swift */; };
 		C7935AFD27D9994400AC9457 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935AFC27D9994400AC9457 /* Book.swift */; };
 		C7935AFF27D99B0100AC9457 /* DetailBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935AFE27D99B0100AC9457 /* DetailBook.swift */; };
+		C7935B0127D99CE800AC9457 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935B0027D99CE800AC9457 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C7935AF927D998F100AC9457 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C7935AFC27D9994400AC9457 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		C7935AFE27D99B0100AC9457 /* DetailBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBook.swift; sourceTree = "<group>"; };
+		C7935B0027D99CE800AC9457 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,13 @@
 		C7935ADC27D82CA900AC9457 /* BookS_MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C7935AF327D994C500AC9457 /* Home */,
 				C7935AFB27D9992700AC9457 /* New Group */,
 				C7935AF827D9968D00AC9457 /* DB */,
 				C7935AF727D9966F00AC9457 /* UserProfile */,
 				C7935AF627D995FF00AC9457 /* Search */,
 				C7935AF527D995F600AC9457 /* API */,
 				C7935AF427D995ED00AC9457 /* Models */,
-				C7935AF327D994C500AC9457 /* Home */,
 				C7935AF227D9949D00AC9457 /* Extensions */,
 				C7935AF127D9945B00AC9457 /* Support */,
 				C7935AE127D82CA900AC9457 /* ViewController.swift */,
@@ -86,6 +88,7 @@
 		C7935AF227D9949D00AC9457 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C7935B0027D99CE800AC9457 /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				C7935AFF27D99B0100AC9457 /* DetailBook.swift in Sources */,
 				C7935AE227D82CA900AC9457 /* ViewController.swift in Sources */,
 				C7935AFA27D998F100AC9457 /* API.swift in Sources */,
+				C7935B0127D99CE800AC9457 /* UIImageView.swift in Sources */,
 				C7935ADE27D82CA900AC9457 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
