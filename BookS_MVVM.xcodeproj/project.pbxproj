@@ -184,9 +184,9 @@
 				C7935B1A27D9D75D00AC9457 /* New Group1 */,
 				C7935B0D27D9D40F00AC9457 /* Login */,
 				C7935AEB27D82CAC00AC9457 /* Info.plist */,
+				C7935B0327D9C17900AC9457 /* Main */,
 				C7935B0627D9CFCF00AC9457 /* Onboarding */,
 				C7935B0227D9C03000AC9457 /* SupportFiles */,
-				C7935B0327D9C17900AC9457 /* Main */,
 			);
 			path = BookS_MVVM;
 			sourceTree = "<group>";

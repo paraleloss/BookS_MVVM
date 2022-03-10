@@ -6,20 +6,24 @@
 //
 
 import UIKit
+import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var windows: UIWindow?
 
+    var window: UIWindow?
+    var persistentContainer: NSPersistentContainer?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        self.windows = UIWindow(frame: UIScreen.main.bounds)
-        self.windows?.rootViewController = MainController()
-        self.windows?.makeKeyAndVisible()
+        createContainer { container in
+            self.persistentContainer = container
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = MainController(context: container.viewContext)
+            self.window?.makeKeyAndVisible()
+        }
         return true
     }
-
 
 
 }
