@@ -29,6 +29,7 @@
 		C749152327DA923B00C58386 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749152227DA923B00C58386 /* CoreDataStack.swift */; };
 		C749152627DA927700C58386 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C749152427DA927700C58386 /* CoreData.xcdatamodeld */; };
 		C749152927DA95F100C58386 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749152827DA95F100C58386 /* SearchViewController.swift */; };
+		C749152D27DA968800C58386 /* EmptySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749152C27DA968800C58386 /* EmptySearchView.swift */; };
 		C7935ADE27D82CA900AC9457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935ADD27D82CA900AC9457 /* AppDelegate.swift */; };
 		C7935AE227D82CA900AC9457 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935AE127D82CA900AC9457 /* MainController.swift */; };
 		C7935AE727D82CAC00AC9457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7935AE627D82CAC00AC9457 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		C749152227DA923B00C58386 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C749152527DA927700C58386 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		C749152827DA95F100C58386 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C749152C27DA968800C58386 /* EmptySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchView.swift; sourceTree = "<group>"; };
 		C7935ADA27D82CA900AC9457 /* BookS_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookS_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7935ADD27D82CA900AC9457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7935AE127D82CA900AC9457 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -182,8 +184,25 @@
 			isa = PBXGroup;
 			children = (
 				C749152827DA95F100C58386 /* SearchViewController.swift */,
+				C749152B27DA965900C58386 /* Views */,
+				C749152A27DA965000C58386 /* ViewModel */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		C749152A27DA965000C58386 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C749152B27DA965900C58386 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C749152C27DA968800C58386 /* EmptySearchView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C7935AD127D82CA900AC9457 = {
@@ -380,6 +399,7 @@
 				C74914FF27D9DE1C00C58386 /* HomeViewController.swift in Sources */,
 				C749151527D9E19A00C58386 /* UserModel.swift in Sources */,
 				C7935B1927D9D5BA00AC9457 /* SignInView.swift in Sources */,
+				C749152D27DA968800C58386 /* EmptySearchView.swift in Sources */,
 				C749151F27DA91F800C58386 /* NSManagedObjectContext.swift in Sources */,
 				C749152327DA923B00C58386 /* CoreDataStack.swift in Sources */,
 				C749150927D9DF3D00C58386 /* BookTableViewCell.swift in Sources */,
