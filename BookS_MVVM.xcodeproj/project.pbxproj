@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C74914F427D9DBF700C58386 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74914F327D9DBF700C58386 /* ProfileViewController.swift */; };
+		C74914F827D9DC8900C58386 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74914F727D9DC8900C58386 /* ProfileView.swift */; };
+		C74914FA27D9DCC800C58386 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74914F927D9DCC800C58386 /* ProfileViewModel.swift */; };
 		C7935ADE27D82CA900AC9457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935ADD27D82CA900AC9457 /* AppDelegate.swift */; };
 		C7935AE227D82CA900AC9457 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935AE127D82CA900AC9457 /* MainController.swift */; };
 		C7935AE727D82CAC00AC9457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7935AE627D82CAC00AC9457 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C74914F327D9DBF700C58386 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C74914F727D9DC8900C58386 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C74914F927D9DCC800C58386 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		C7935ADA27D82CA900AC9457 /* BookS_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookS_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7935ADD27D82CA900AC9457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7935AE127D82CA900AC9457 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C74914F527D9DC3200C58386 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C74914F927D9DCC800C58386 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C74914F627D9DC4500C58386 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C74914F727D9DC8900C58386 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C7935AD127D82CA900AC9457 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +90,8 @@
 		C7935ADC27D82CA900AC9457 /* BookS_MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C7935B1E27D9D98600AC9457 /* Profile */,
+				C7935B1A27D9D75D00AC9457 /* New Group1 */,
 				C7935B0D27D9D40F00AC9457 /* Login */,
 				C7935AEB27D82CAC00AC9457 /* Info.plist */,
 				C7935B0627D9CFCF00AC9457 /* Onboarding */,
@@ -131,6 +155,23 @@
 				C7935B1827D9D5BA00AC9457 /* SignInView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C7935B1A27D9D75D00AC9457 /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		C7935B1E27D9D98600AC9457 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C74914F327D9DBF700C58386 /* ProfileViewController.swift */,
+				C74914F627D9DC4500C58386 /* Views */,
+				C74914F527D9DC3200C58386 /* ViewModel */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,10 +248,13 @@
 				C7935B1127D9D47000AC9457 /* SignUpViewController.swift in Sources */,
 				C7935ADE27D82CA900AC9457 /* AppDelegate.swift in Sources */,
 				C7935B0F27D9D44100AC9457 /* SignInViewController.swift in Sources */,
+				C74914F827D9DC8900C58386 /* ProfileView.swift in Sources */,
 				C7935B1927D9D5BA00AC9457 /* SignInView.swift in Sources */,
 				C7935B1527D9D51C00AC9457 /* LoginViewModel.swift in Sources */,
+				C74914F427D9DBF700C58386 /* ProfileViewController.swift in Sources */,
 				C7935B0527D9C1B300AC9457 /* SplashView.swift in Sources */,
 				C7935B0C27D9D35100AC9457 /* TabBarController.swift in Sources */,
+				C74914FA27D9DCC800C58386 /* ProfileViewModel.swift in Sources */,
 				C7935B1727D9D5A700AC9457 /* SignUpView.swift in Sources */,
 				C7935B0A27D9D21100AC9457 /* OnboardingViewController.swift in Sources */,
 			);
