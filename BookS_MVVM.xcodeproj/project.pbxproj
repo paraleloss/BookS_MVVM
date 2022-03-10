@@ -19,18 +19,18 @@
 		C749150B27D9DF7000C58386 /* HeaderDetailBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749150A27D9DF7000C58386 /* HeaderDetailBookTableViewCell.swift */; };
 		C749150D27D9DF8300C58386 /* InfoDetailBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749150C27D9DF8300C58386 /* InfoDetailBookTableViewCell.swift */; };
 		C749151027D9E11500C58386 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749150F27D9E11500C58386 /* API.swift */; };
-		C749151327D9E16C00C58386 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749151227D9E16C00C58386 /* Book.swift */; };
-		C749151527D9E19A00C58386 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749151427D9E19A00C58386 /* UserModel.swift */; };
-		C749151727D9E1C600C58386 /* DetailBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749151627D9E1C600C58386 /* DetailBook.swift */; };
-		C749151927D9E23400C58386 /* BookFavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749151827D9E23400C58386 /* BookFavoriteModel.swift */; };
 		C749151C27D9E2A500C58386 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749151B27D9E2A500C58386 /* UIImageView.swift */; };
-		C749151F27DA91F800C58386 /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749151E27DA91F800C58386 /* NSManagedObjectContext.swift */; };
+		C749151F27DA91F800C58386 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749151E27DA91F800C58386 /* NSManagedObjectContext+Extensions.swift */; };
 		C749152127DA921600C58386 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749152027DA921600C58386 /* Managed.swift */; };
 		C749152327DA923B00C58386 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749152227DA923B00C58386 /* CoreDataStack.swift */; };
 		C749152627DA927700C58386 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C749152427DA927700C58386 /* CoreData.xcdatamodeld */; };
 		C749152927DA95F100C58386 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749152827DA95F100C58386 /* SearchViewController.swift */; };
 		C749152D27DA968800C58386 /* EmptySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749152C27DA968800C58386 /* EmptySearchView.swift */; };
 		C749152F27DA96CA00C58386 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749152E27DA96CA00C58386 /* SearchViewModel.swift */; };
+		C749153E27DA9D8300C58386 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749153D27DA9D8300C58386 /* Book.swift */; };
+		C749154027DA9DB000C58386 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749153F27DA9DB000C58386 /* UserModel.swift */; };
+		C749154227DA9E0000C58386 /* DetailBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749154127DA9E0000C58386 /* DetailBook.swift */; };
+		C749154427DA9E1E00C58386 /* BookFavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749154327DA9E1E00C58386 /* BookFavoriteModel.swift */; };
 		C7935ADE27D82CA900AC9457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935ADD27D82CA900AC9457 /* AppDelegate.swift */; };
 		C7935AE227D82CA900AC9457 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935AE127D82CA900AC9457 /* MainController.swift */; };
 		C7935AE727D82CAC00AC9457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7935AE627D82CAC00AC9457 /* Assets.xcassets */; };
@@ -58,18 +58,18 @@
 		C749150A27D9DF7000C58386 /* HeaderDetailBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailBookTableViewCell.swift; sourceTree = "<group>"; };
 		C749150C27D9DF8300C58386 /* InfoDetailBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailBookTableViewCell.swift; sourceTree = "<group>"; };
 		C749150F27D9E11500C58386 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		C749151227D9E16C00C58386 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		C749151427D9E19A00C58386 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		C749151627D9E1C600C58386 /* DetailBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBook.swift; sourceTree = "<group>"; };
-		C749151827D9E23400C58386 /* BookFavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFavoriteModel.swift; sourceTree = "<group>"; };
 		C749151B27D9E2A500C58386 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
-		C749151E27DA91F800C58386 /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContext.swift; sourceTree = "<group>"; };
+		C749151E27DA91F800C58386 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
 		C749152027DA921600C58386 /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
 		C749152227DA923B00C58386 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C749152527DA927700C58386 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		C749152827DA95F100C58386 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C749152C27DA968800C58386 /* EmptySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchView.swift; sourceTree = "<group>"; };
 		C749152E27DA96CA00C58386 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		C749153D27DA9D8300C58386 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		C749153F27DA9DB000C58386 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C749154127DA9E0000C58386 /* DetailBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBook.swift; sourceTree = "<group>"; };
+		C749154327DA9E1E00C58386 /* BookFavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFavoriteModel.swift; sourceTree = "<group>"; };
 		C7935ADA27D82CA900AC9457 /* BookS_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookS_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7935ADD27D82CA900AC9457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7935AE127D82CA900AC9457 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -152,17 +152,6 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		C749151127D9E14C00C58386 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C749151227D9E16C00C58386 /* Book.swift */,
-				C749151427D9E19A00C58386 /* UserModel.swift */,
-				C749151627D9E1C600C58386 /* DetailBook.swift */,
-				C749151827D9E23400C58386 /* BookFavoriteModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		C749151A27D9E28100C58386 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +165,7 @@
 			children = (
 				C749152427DA927700C58386 /* CoreData.xcdatamodeld */,
 				C749152027DA921600C58386 /* Managed.swift */,
-				C749151E27DA91F800C58386 /* NSManagedObjectContext.swift */,
+				C749151E27DA91F800C58386 /* NSManagedObjectContext+Extensions.swift */,
 				C749152227DA923B00C58386 /* CoreDataStack.swift */,
 			);
 			path = DataBase;
@@ -208,6 +197,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		C749153C27DA9D6C00C58386 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C749153D27DA9D8300C58386 /* Book.swift */,
+				C749153F27DA9DB000C58386 /* UserModel.swift */,
+				C749154127DA9E0000C58386 /* DetailBook.swift */,
+				C749154327DA9E1E00C58386 /* BookFavoriteModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C7935AD127D82CA900AC9457 = {
 			isa = PBXGroup;
 			children = (
@@ -227,15 +227,14 @@
 		C7935ADC27D82CA900AC9457 /* BookS_MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				C749152727DA95C500C58386 /* Search */,
 				C749151D27DA916D00C58386 /* DataBase */,
-				C749151127D9E14C00C58386 /* Models */,
+				C749153C27DA9D6C00C58386 /* Models */,
+				C7935AEB27D82CAC00AC9457 /* Info.plist */,
+				C749152727DA95C500C58386 /* Search */,
 				C749150E27D9E10400C58386 /* API */,
 				C74914FB27D9DD3A00C58386 /* Home */,
 				C7935B1E27D9D98600AC9457 /* Profile */,
-				C7935B1A27D9D75D00AC9457 /* New Group1 */,
 				C7935B0D27D9D40F00AC9457 /* Login */,
-				C7935AEB27D82CAC00AC9457 /* Info.plist */,
 				C7935B0627D9CFCF00AC9457 /* Onboarding */,
 				C7935B0327D9C17900AC9457 /* Main */,
 				C749151A27D9E28100C58386 /* Extensions */,
@@ -298,13 +297,6 @@
 				C7935B1827D9D5BA00AC9457 /* SignInView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		C7935B1A27D9D75D00AC9457 /* New Group1 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group1";
 			sourceTree = "<group>";
 		};
 		C7935B1E27D9D98600AC9457 /* Profile */ = {
@@ -391,6 +383,7 @@
 				C749151027D9E11500C58386 /* API.swift in Sources */,
 				C749151C27D9E2A500C58386 /* UIImageView.swift in Sources */,
 				C749150B27D9DF7000C58386 /* HeaderDetailBookTableViewCell.swift in Sources */,
+				C749154227DA9E0000C58386 /* DetailBook.swift in Sources */,
 				C7935AE227D82CA900AC9457 /* MainController.swift in Sources */,
 				C7935B1127D9D47000AC9457 /* SignUpViewController.swift in Sources */,
 				C7935ADE27D82CA900AC9457 /* AppDelegate.swift in Sources */,
@@ -398,13 +391,12 @@
 				C7935B0F27D9D44100AC9457 /* SignInViewController.swift in Sources */,
 				C74914F827D9DC8900C58386 /* ProfileView.swift in Sources */,
 				C749152927DA95F100C58386 /* SearchViewController.swift in Sources */,
-				C749151327D9E16C00C58386 /* Book.swift in Sources */,
+				C749153E27DA9D8300C58386 /* Book.swift in Sources */,
 				C74914FF27D9DE1C00C58386 /* HomeViewController.swift in Sources */,
-				C749151527D9E19A00C58386 /* UserModel.swift in Sources */,
 				C749152F27DA96CA00C58386 /* SearchViewModel.swift in Sources */,
 				C7935B1927D9D5BA00AC9457 /* SignInView.swift in Sources */,
 				C749152D27DA968800C58386 /* EmptySearchView.swift in Sources */,
-				C749151F27DA91F800C58386 /* NSManagedObjectContext.swift in Sources */,
+				C749151F27DA91F800C58386 /* NSManagedObjectContext+Extensions.swift in Sources */,
 				C749152327DA923B00C58386 /* CoreDataStack.swift in Sources */,
 				C749150927D9DF3D00C58386 /* BookTableViewCell.swift in Sources */,
 				C749152627DA927700C58386 /* CoreData.xcdatamodeld in Sources */,
@@ -414,12 +406,12 @@
 				C7935B0C27D9D35100AC9457 /* TabBarController.swift in Sources */,
 				C749150527D9DEFA00C58386 /* ListBooksView.swift in Sources */,
 				C74914FA27D9DCC800C58386 /* ProfileViewModel.swift in Sources */,
+				C749154027DA9DB000C58386 /* UserModel.swift in Sources */,
 				C749150727D9DF1A00C58386 /* DetailBookView.swift in Sources */,
 				C7935B1727D9D5A700AC9457 /* SignUpView.swift in Sources */,
-				C749151727D9E1C600C58386 /* DetailBook.swift in Sources */,
 				C7935B0A27D9D21100AC9457 /* OnboardingViewController.swift in Sources */,
+				C749154427DA9E1E00C58386 /* BookFavoriteModel.swift in Sources */,
 				C749150127D9DE6B00C58386 /* DetailBookViewController.swift in Sources */,
-				C749151927D9E23400C58386 /* BookFavoriteModel.swift in Sources */,
 				C749150D27D9DF8300C58386 /* InfoDetailBookTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
