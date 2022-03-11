@@ -24,7 +24,7 @@ class DetailBookView: UIView {
     }
     
     private func setupView() {
-        backgroundColor = UIColor.systemBackground
+       // backgroundColor = UIColor.systemBackground
         addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([

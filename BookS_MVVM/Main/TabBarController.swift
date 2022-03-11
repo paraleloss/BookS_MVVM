@@ -25,14 +25,14 @@ class TabBarController: UITabBarController {
                                                  tag: 0)
         
         let searchController = UINavigationController(rootViewController: SearchViewController(context: managedObjectContext))
-        searchController.tabBarItem = UITabBarItem(title: "Search",
+        searchController.tabBarItem = UITabBarItem(title: "Buscar",
                                                   image: UIImage(systemName: "magnifyingglass"),
                                                   tag: 1)
         ;
         let profileController = ProfileViewController(context: managedObjectContext)
         profileController.delegate = self
         let profileNavigationController = UINavigationController(rootViewController: profileController)
-        profileNavigationController.tabBarItem = UITabBarItem(title: "Profile",
+        profileNavigationController.tabBarItem = UITabBarItem(title: "Tu perfil",
                                                   image: UIImage(systemName: "person"),
                                                   tag: 2)
         

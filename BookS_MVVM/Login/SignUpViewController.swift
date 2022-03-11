@@ -83,8 +83,8 @@ extension SignUpViewController: SignUpViewDelegate {
     }
     
     func tapImage() {
-        let alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
-        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { _ in
+        let alert = UIAlertController(title: "Usar de tu galeria", message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Tomar foto", style: .default, handler: { _ in
             self.openCamera()
         }))
         alert.addAction(UIAlertAction(title: "Gallery", style: .default, handler: { _ in

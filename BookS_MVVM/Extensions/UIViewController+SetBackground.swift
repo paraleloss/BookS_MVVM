@@ -15,6 +15,14 @@ extension UIViewController {
         backgroundImage.alpha = 0.8
         self.view.insertSubview(backgroundImage, at: 0)
         }
+    
+    func setBackgroundImage2(_ imageName: String, contentMode: UIView.ContentMode) {
+        let backgroundImage = UIImageView(frame: self.view.bounds)
+        backgroundImage.image = UIImage(named: "books2")
+        backgroundImage.contentMode = contentMode
+        backgroundImage.alpha = 0.7
+        self.view.insertSubview(backgroundImage, at: 0)
+        }
 
 }
 

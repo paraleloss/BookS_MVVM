@@ -24,6 +24,7 @@ class BookTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
+        self.backgroundColor = .clear
     }
     
     private func setupView() {

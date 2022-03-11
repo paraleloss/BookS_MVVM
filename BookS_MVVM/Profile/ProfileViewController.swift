@@ -26,13 +26,15 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.systemBackground
+        self.setBackgroundImage2("a", contentMode: .scaleAspectFill)
         setup()
     }
     
     private func setup() {
         title = "Profile"
         navigationController?.navigationBar.prefersLargeTitles = true
-        view.backgroundColor = UIColor.systemBackground
+        //view.backgroundColor = .red
         view.addSubview(profileView)
         profileView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([

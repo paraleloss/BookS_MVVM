@@ -15,18 +15,23 @@ class ListBooksView: UIView {
     weak var delegate: ListBooksViewDelegate?
     let tableView = UITableView()
     var books = [DetailBook]()
+    let colorAlternativo = UIColor(red: 51/255, green: 130/255, blue: 133/255, alpha: 1.00)
     
     init() {
         super.init(frame: .zero)
         setupView()
+        self.backgroundColor = .clear
     }
 
     public func fill(_ books: [DetailBook]) {
         self.books = books
         tableView.reloadData()
+       // self.setBackgroundImage("a", contentMode: .scaleAspectFill)
     }
     
     private func setupView() {
+       // tableView.backgroundColor = colorAlternativo
+        
         addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([

@@ -40,7 +40,7 @@ class SignInView: UIView {
             titleLabel.heightAnchor.constraint(equalToConstant: 30)
         ])
         titleLabel.textAlignment = .center
-        titleLabel.text = "Iniciar sesion"
+        titleLabel.text = "Iniciar sesión"
         titleLabel.font = UIFont.preferredFont(forTextStyle: .title1)
         titleLabel.textColor = .white
         addSubview(usernameTextField)

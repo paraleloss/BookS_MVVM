@@ -17,8 +17,7 @@ class DetailBookViewController: UIViewController {
     init(book: DetailBook, context: NSManagedObjectContext) {
         self.book = book
         managedObjectContext = context
-        detailView = DetailBookView(book: viewModel.getDetailsBook(book,
-                                                                   context: managedObjectContext))
+        detailView = DetailBookView(book: viewModel.getDetailsBook(book, context: managedObjectContext))
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -31,9 +30,9 @@ class DetailBookViewController: UIViewController {
     
     private func showAlertFavorite(isFavorite: Bool) {
         let alertController = UIAlertController(title: nil,
-                                                message: isFavorite ? "Book remove from favorites" : "Book add to favorites",
+                                                message: isFavorite ? "Se quitó de favoritos" : "Agregado a favoritos",
                                                 preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Accept", style: .cancel))
+        alertController.addAction(UIAlertAction(title: "Aceptar", style: .cancel))
         present(alertController, animated: true)
     }
     

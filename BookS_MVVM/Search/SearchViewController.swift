@@ -27,7 +27,7 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setBackgroundImage("asd", contentMode: .scaleAspectFill)
+        //self.setBackgroundImage("asd", contentMode: .scaleAspectFill)
         setup()
         setupSearchController()
     }
