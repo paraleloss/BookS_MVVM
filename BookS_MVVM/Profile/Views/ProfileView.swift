@@ -50,25 +50,22 @@ class ProfileView: UIView {
             nameLabel.topAnchor.constraint(equalTo: imageUserView.bottomAnchor, constant: 10)
         ])
         nameLabel.textAlignment = .center
-        nameLabel.font = UIFont.preferredFont(forTextStyle: .headline)
+        nameLabel.textColor = .white
+        nameLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle)
         addSubview(favLabel)
         favLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            favLabel.leadingAnchor.constraint(equalTo: leadingAnchor,
-                                              constant: 20),
-            favLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor,
-                                          constant: 20),
+            favLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            favLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 20),
         ])
-        favLabel.text = "Tus libros"
-        favLabel.font = UIFont.preferredFont(forTextStyle: .title1)
-        
+        favLabel.text = "Favoritos" + "⭐️"
+        favLabel.font = UIFont.preferredFont(forTextStyle: .title2)
         addSubview(listBooksView)
         listBooksView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             listBooksView.leadingAnchor.constraint(equalTo: leadingAnchor),
             listBooksView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            listBooksView.topAnchor.constraint(equalTo: favLabel.bottomAnchor,
-                                               constant: 20),
+            listBooksView.topAnchor.constraint(equalTo: favLabel.bottomAnchor,constant: 20),
             listBooksView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
         ])
         listBooksView.delegate = self

@@ -37,7 +37,7 @@ class DetailBookViewController: UIViewController {
     }
     
     private func setupView() {
-        title = "Detail"
+        title = "Acerca de este libro"
         hidesBottomBarWhenPushed = true
         detailView.delegate = self
         view.addSubview(detailView)

@@ -32,7 +32,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func setup() {
-        title = "Profile"
+        title = "Tu perfil"
         navigationController?.navigationBar.prefersLargeTitles = true
         //view.backgroundColor = .red
         view.addSubview(profileView)
@@ -49,6 +49,7 @@ class ProfileViewController: UIViewController {
                                 image: info.image)
         }
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log out", style: .plain, target: self, action: #selector(logOut))
+        navigationItem.rightBarButtonItem?.tintColor = .white
     }
     
     @objc func logOut() {

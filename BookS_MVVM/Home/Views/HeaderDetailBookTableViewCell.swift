@@ -24,9 +24,9 @@ class HeaderDetailBookTableViewCell: UITableViewCell {
         coverImageView.downloaded(from: book.image)
         nameLabel.text = book.title
         if book.isFavorite {
-            favButton.setTitle("Remove from favorites", for: .normal)
+            favButton.setTitle("Quitar de Favoritos ➖", for: .normal)
         } else {
-            favButton.setTitle("Add to favorites", for: .normal)
+            favButton.setTitle("Agregar a favoritos ⭐️", for: .normal)
         }
     }}
     
