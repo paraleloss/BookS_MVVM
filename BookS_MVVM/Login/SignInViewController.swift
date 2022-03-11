@@ -26,11 +26,13 @@ class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.systemBackground
+        self.setBackgroundImage("a", contentMode: .scaleAspectFill)
         setup()
     }
 
     private func setup() {
-        
+        view.backgroundColor = UIColor.systemBackground
         view.addSubview(signInView)
         signInView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -64,9 +66,9 @@ extension SignInViewController: SignInViewDelegate {
             signUpComplete()
         } else {
             let alertController = UIAlertController(title: "Error",
-                                                    message: "user not found",
+                                                    message: "Verifica tu username y password",
                                                     preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Accept", style: .cancel))
+            alertController.addAction(UIAlertAction(title: "Aceptar", style: .cancel))
             present(alertController,
                     animated: true)
         }

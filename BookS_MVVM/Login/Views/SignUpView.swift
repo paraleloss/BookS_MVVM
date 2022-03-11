@@ -31,7 +31,6 @@ class SignUpView: UIView {
 
     private func setupView() {
        
-        backgroundColor = UIColor.systemBackground
         addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -40,8 +39,9 @@ class SignUpView: UIView {
             titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 40)
         ])
         titleLabel.textAlignment = .center
-        titleLabel.text = "Sign Up"
+        titleLabel.text = "Registrarse"
         titleLabel.font = UIFont.preferredFont(forTextStyle: .title1)
+        titleLabel.textColor = .white
         addSubview(imageUserView)
         imageUserView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -51,7 +51,7 @@ class SignUpView: UIView {
             imageUserView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,
                                                constant: 20)
         ])
-        imageUserView.image = UIImage(systemName: "camera.circle.fill")
+        imageUserView.image = UIImage(systemName: "photo.circle")
         imageUserView.clipsToBounds = true
         imageUserView.layer.masksToBounds = true
         imageUserView.layer.borderColor = UIColor.white.cgColor
@@ -94,8 +94,8 @@ class SignUpView: UIView {
             loginButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -20),
             loginButton.heightAnchor.constraint(equalToConstant: 40)
         ])
-        loginButton.setTitle("return to Login", for: .normal)
-        loginButton.setTitleColor(UIColor.secondaryLabel, for: .normal)
+        loginButton.setTitle("regresar", for: .normal)
+        loginButton.setTitleColor(UIColor.systemGray6, for: .normal)
         loginButton.addTarget(self,
                               action: #selector(tapLogin),
                               for: .touchUpInside)
@@ -108,8 +108,8 @@ class SignUpView: UIView {
             nextButton.bottomAnchor.constraint(equalTo: loginButton.topAnchor, constant: -10),
             nextButton.heightAnchor.constraint(equalToConstant: 50)
         ])
-        nextButton.setTitle("ACCEPT", for: .normal)
-        nextButton.backgroundColor = UIColor.gray
+        nextButton.setTitle("Aceptar", for: .normal)
+        nextButton.backgroundColor = UIColor.systemGray
         nextButton.layer.masksToBounds = true
         nextButton.clipsToBounds = true
         nextButton.layer.cornerRadius = 4
@@ -153,7 +153,7 @@ class SignUpView: UIView {
     
     private func isCompleted() {
         if fieldsCompleted() {
-            nextButton.backgroundColor = UIColor.green
+            nextButton.backgroundColor = UIColor.systemBlue
             nextButton.isEnabled = true
         } else {
             nextButton.backgroundColor = UIColor.gray

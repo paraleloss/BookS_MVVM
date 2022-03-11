@@ -23,7 +23,7 @@ class InfoDetailBookTableViewCell: UITableViewCell {
     }
     
     private func setupView() {
-        selectionStyle = .none
+        selectionStyle = .blue
         contentView.addSubview(infoLabel)
         infoLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([

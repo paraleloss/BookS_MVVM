@@ -27,12 +27,14 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setBackgroundImage("asd", contentMode: .scaleAspectFill)
         setup()
         setupSearchController()
     }
     
     private func setup() {
         title = "Search"
+        
         navigationController?.navigationBar.prefersLargeTitles = true
         view.backgroundColor = UIColor.systemBackground
         view.addSubview(listBooksView)

@@ -10,7 +10,8 @@ import UIKit
 
 class SplashView: UIView {
     private var path: UIBezierPath!
-    
+    let colorBlue = UIColor(red: 89/255, green: 144/255, blue: 255/255, alpha: 1.00)
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .clear
@@ -23,7 +24,7 @@ class SplashView: UIView {
                             endAngle: deg2rad(CGFloat(0)),
                             clockwise: true)
         
-        UIColor.systemBlue.setFill()
+        colorBlue.setFill()
         path.fill()
 
         UIColor.blue.setStroke()
@@ -35,7 +36,7 @@ class SplashView: UIView {
     }
     
     private func deg2rad(_ number: CGFloat) -> CGFloat {
-        return number * .pi / 180
+        return number * .pi / 30
     }
     
     public func animateView(completion: @escaping() -> Void) {

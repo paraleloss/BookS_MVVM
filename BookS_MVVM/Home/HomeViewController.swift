@@ -21,11 +21,14 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.red
+       // self.setBackgroundImage("a", contentMode: .scaleAspectFill)
         setup()
         getTopBooks()
     }
     
     private func setup() {
+        //view.backgroundColor = UIColor.systemBackground
         title = "Top Books"
         navigationController?.navigationBar.prefersLargeTitles = true
         view.addSubview(listBooksView)

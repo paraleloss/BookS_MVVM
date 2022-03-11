@@ -27,11 +27,13 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.systemBackground
+        self.setBackgroundImage("a", contentMode: .scaleAspectFill)
         setup()
     }
 
     private func setup() {
-        
+        //self.setBackgroundImage("asd", contentMode: .scaleAspectFill)
         view.addSubview(signUpView)
         signUpView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([

@@ -134,8 +134,8 @@
 		C736274427DADB3800765DEF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C736274727DADBA300765DEF /* SignUpView.swift */,
 				C736274927DADBE400765DEF /* SignInView.swift */,
+				C736274727DADBA300765DEF /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
