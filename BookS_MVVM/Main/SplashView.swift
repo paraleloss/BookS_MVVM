@@ -8,20 +8,24 @@
 import Foundation
 import UIKit
 
-class SplashView: UIView{
+class SplashView: UIView {
     private var path: UIBezierPath!
     
-    override init(frame: CGRect){
+    override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .clear
     }
     
     override func draw(_ rect: CGRect) {
-        path = UIBezierPath(arcCenter: CGPoint(x: self.frame.size.width/2, y: self.frame.size.height/2), radius: self.frame.size.height/2, startAngle: deg2rad(CGFloat(180)), endAngle: deg2rad(CGFloat(180)), clockwise: true)
+        path = UIBezierPath(arcCenter: CGPoint(x: self.frame.size.width/2, y: self.frame.size.height/2),
+                            radius: self.frame.size.height/2,
+                            startAngle: deg2rad(CGFloat(180)),
+                            endAngle: deg2rad(CGFloat(0)),
+                            clockwise: true)
         
         UIColor.red.setFill()
         path.fill()
-        
+
         UIColor.blue.setStroke()
         path.stroke()
     }
@@ -30,7 +34,7 @@ class SplashView: UIView{
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func deg2rad(_ number: CGFloat) -> CGFloat{
+    private func deg2rad(_ number: CGFloat) -> CGFloat {
         return number * .pi / 180
     }
     

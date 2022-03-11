@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C736273927DAD9BB00765DEF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736273827DAD9BB00765DEF /* CoreDataStack.swift */; };
+		C736273B27DAD9F300765DEF /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736273A27DAD9F300765DEF /* Managed.swift */; };
+		C736273D27DADA1000765DEF /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736273C27DADA1000765DEF /* NSManagedObjectContext+Extensions.swift */; };
+		C736274027DADAB500765DEF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736273F27DADAB500765DEF /* SignInViewController.swift */; };
+		C736274227DADAF700765DEF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736274127DADAF700765DEF /* SignUpViewController.swift */; };
+		C736274627DADB5C00765DEF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736274527DADB5C00765DEF /* LoginViewModel.swift */; };
+		C736274827DADBA300765DEF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736274727DADBA300765DEF /* SignUpView.swift */; };
+		C736274A27DADBE400765DEF /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736274927DADBE400765DEF /* SignInView.swift */; };
+		C736274D27DADD4E00765DEF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736274C27DADD4E00765DEF /* ProfileViewController.swift */; };
+		C736275127DADE4300765DEF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736275027DADE4300765DEF /* ProfileViewModel.swift */; };
+		C736275327DADEB100765DEF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736275227DADEB100765DEF /* ProfileView.swift */; };
+		C736275627DADFD500765DEF /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736275527DADFD500765DEF /* Book.swift */; };
+		C736275827DAE0A000765DEF /* DetailBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736275727DAE0A000765DEF /* DetailBook.swift */; };
+		C736275A27DAE0F600765DEF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736275927DAE0F600765DEF /* UserModel.swift */; };
+		C736276027DAE77A00765DEF /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C736275E27DAE77A00765DEF /* CoreData.xcdatamodeld */; };
+		C736276227DAECB200765DEF /* BookFavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736276127DAECB200765DEF /* BookFavoriteModel.swift */; };
+		C736276527DAED4F00765DEF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736276427DAED4F00765DEF /* API.swift */; };
+		C736276A27DAEFC900765DEF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736276927DAEFC900765DEF /* SearchViewController.swift */; };
+		C736276C27DAF01700765DEF /* EmptySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736276B27DAF01700765DEF /* EmptySearchView.swift */; };
+		C736276E27DAF04100765DEF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736276D27DAF04100765DEF /* SearchViewModel.swift */; };
+		C736277327DAF10700765DEF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736277227DAF10700765DEF /* HomeViewController.swift */; };
+		C736277527DAF19000765DEF /* DetailBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736277427DAF19000765DEF /* DetailBookViewController.swift */; };
+		C736277727DAF1B700765DEF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736277627DAF1B700765DEF /* HomeViewModel.swift */; };
+		C736277927DAF22200765DEF /* ListBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736277827DAF22200765DEF /* ListBooksView.swift */; };
+		C736277B27DAF24B00765DEF /* DetailBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736277A27DAF24B00765DEF /* DetailBookView.swift */; };
+		C736277D27DAF26C00765DEF /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736277C27DAF26C00765DEF /* BookTableViewCell.swift */; };
+		C736277F27DAF2B400765DEF /* HeaderDetailBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736277E27DAF2B400765DEF /* HeaderDetailBookTableViewCell.swift */; };
+		C736278127DAF2D000765DEF /* InfoDetailBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736278027DAF2D000765DEF /* InfoDetailBookTableViewCell.swift */; };
 		C749151C27D9E2A500C58386 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749151B27D9E2A500C58386 /* UIImageView.swift */; };
 		C7935ADE27D82CA900AC9457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935ADD27D82CA900AC9457 /* AppDelegate.swift */; };
 		C7935AE227D82CA900AC9457 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935AE127D82CA900AC9457 /* MainController.swift */; };
@@ -17,6 +45,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C736273827DAD9BB00765DEF /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C736273A27DAD9F300765DEF /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
+		C736273C27DADA1000765DEF /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		C736273F27DADAB500765DEF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C736274127DADAF700765DEF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C736274527DADB5C00765DEF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C736274727DADBA300765DEF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		C736274927DADBE400765DEF /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		C736274C27DADD4E00765DEF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C736275027DADE4300765DEF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C736275227DADEB100765DEF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C736275527DADFD500765DEF /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		C736275727DAE0A000765DEF /* DetailBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBook.swift; sourceTree = "<group>"; };
+		C736275927DAE0F600765DEF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C736275F27DAE77A00765DEF /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		C736276127DAECB200765DEF /* BookFavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFavoriteModel.swift; sourceTree = "<group>"; };
+		C736276427DAED4F00765DEF /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C736276927DAEFC900765DEF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C736276B27DAF01700765DEF /* EmptySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchView.swift; sourceTree = "<group>"; };
+		C736276D27DAF04100765DEF /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		C736277227DAF10700765DEF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C736277427DAF19000765DEF /* DetailBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookViewController.swift; sourceTree = "<group>"; };
+		C736277627DAF1B700765DEF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C736277827DAF22200765DEF /* ListBooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBooksView.swift; sourceTree = "<group>"; };
+		C736277A27DAF24B00765DEF /* DetailBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookView.swift; sourceTree = "<group>"; };
+		C736277C27DAF26C00765DEF /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		C736277E27DAF2B400765DEF /* HeaderDetailBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailBookTableViewCell.swift; sourceTree = "<group>"; };
+		C736278027DAF2D000765DEF /* InfoDetailBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailBookTableViewCell.swift; sourceTree = "<group>"; };
 		C749151B27D9E2A500C58386 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		C7935ADA27D82CA900AC9457 /* BookS_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookS_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7935ADD27D82CA900AC9457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +95,147 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C736273427DAD87A00765DEF /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				C736275E27DAE77A00765DEF /* CoreData.xcdatamodeld */,
+				C736273827DAD9BB00765DEF /* CoreDataStack.swift */,
+				C736273A27DAD9F300765DEF /* Managed.swift */,
+				C736273C27DADA1000765DEF /* NSManagedObjectContext+Extensions.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		C736273E27DADA5500765DEF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C736273F27DADAB500765DEF /* SignInViewController.swift */,
+				C736274127DADAF700765DEF /* SignUpViewController.swift */,
+				C736274327DADAFC00765DEF /* ViewModels */,
+				C736274427DADB3800765DEF /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C736274327DADAFC00765DEF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C736274527DADB5C00765DEF /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C736274427DADB3800765DEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C736274727DADBA300765DEF /* SignUpView.swift */,
+				C736274927DADBE400765DEF /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C736274B27DADCFD00765DEF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C736274C27DADD4E00765DEF /* ProfileViewController.swift */,
+				C736274E27DADDFA00765DEF /* ViewModels */,
+				C736274F27DADE0600765DEF /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C736274E27DADDFA00765DEF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C736275027DADE4300765DEF /* ProfileViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C736274F27DADE0600765DEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C736275227DADEB100765DEF /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C736275427DADF6900765DEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C736275527DADFD500765DEF /* Book.swift */,
+				C736275727DAE0A000765DEF /* DetailBook.swift */,
+				C736275927DAE0F600765DEF /* UserModel.swift */,
+				C736276127DAECB200765DEF /* BookFavoriteModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C736276327DAED2D00765DEF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C736276427DAED4F00765DEF /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C736276627DAEE4700765DEF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C736276927DAEFC900765DEF /* SearchViewController.swift */,
+				C736276827DAEE5B00765DEF /* Views */,
+				C736276727DAEE5200765DEF /* ViewModels */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C736276727DAEE5200765DEF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C736276D27DAF04100765DEF /* SearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C736276827DAEE5B00765DEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C736276B27DAF01700765DEF /* EmptySearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C736276F27DAF0C500765DEF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C736277427DAF19000765DEF /* DetailBookViewController.swift */,
+				C736277227DAF10700765DEF /* HomeViewController.swift */,
+				C736277127DAF0E700765DEF /* ViewModels */,
+				C736277027DAF0D400765DEF /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C736277027DAF0D400765DEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C736277827DAF22200765DEF /* ListBooksView.swift */,
+				C736277A27DAF24B00765DEF /* DetailBookView.swift */,
+				C736277C27DAF26C00765DEF /* BookTableViewCell.swift */,
+				C736277E27DAF2B400765DEF /* HeaderDetailBookTableViewCell.swift */,
+				C736278027DAF2D000765DEF /* InfoDetailBookTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C736277127DAF0E700765DEF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C736277627DAF1B700765DEF /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		C749151A27D9E28100C58386 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +264,14 @@
 			isa = PBXGroup;
 			children = (
 				C7935AEB27D82CAC00AC9457 /* Info.plist */,
+				C736273427DAD87A00765DEF /* Database */,
+				C736273E27DADA5500765DEF /* Login */,
 				C7935B0327D9C17900AC9457 /* Main */,
+				C736274B27DADCFD00765DEF /* Profile */,
+				C736276627DAEE4700765DEF /* Search */,
+				C736276F27DAF0C500765DEF /* Home */,
+				C736276327DAED2D00765DEF /* API */,
+				C736275427DADF6900765DEF /* Models */,
 				C749151A27D9E28100C58386 /* Extensions */,
 				C7935B0227D9C03000AC9457 /* SupportFiles */,
 			);
@@ -88,8 +292,8 @@
 			isa = PBXGroup;
 			children = (
 				C7935AE127D82CA900AC9457 /* MainController.swift */,
-				C7935B0427D9C1B300AC9457 /* SplashView.swift */,
 				C7935B0B27D9D35100AC9457 /* TabBarController.swift */,
+				C7935B0427D9C1B300AC9457 /* SplashView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -164,10 +368,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C736276C27DAF01700765DEF /* EmptySearchView.swift in Sources */,
+				C736276527DAED4F00765DEF /* API.swift in Sources */,
+				C736277527DAF19000765DEF /* DetailBookViewController.swift in Sources */,
+				C736274227DADAF700765DEF /* SignUpViewController.swift in Sources */,
+				C736273927DAD9BB00765DEF /* CoreDataStack.swift in Sources */,
 				C749151C27D9E2A500C58386 /* UIImageView.swift in Sources */,
+				C736273D27DADA1000765DEF /* NSManagedObjectContext+Extensions.swift in Sources */,
 				C7935AE227D82CA900AC9457 /* MainController.swift in Sources */,
+				C736277F27DAF2B400765DEF /* HeaderDetailBookTableViewCell.swift in Sources */,
+				C736275827DAE0A000765DEF /* DetailBook.swift in Sources */,
+				C736277927DAF22200765DEF /* ListBooksView.swift in Sources */,
+				C736274A27DADBE400765DEF /* SignInView.swift in Sources */,
 				C7935ADE27D82CA900AC9457 /* AppDelegate.swift in Sources */,
+				C736276227DAECB200765DEF /* BookFavoriteModel.swift in Sources */,
+				C736277327DAF10700765DEF /* HomeViewController.swift in Sources */,
+				C736277B27DAF24B00765DEF /* DetailBookView.swift in Sources */,
+				C736273B27DAD9F300765DEF /* Managed.swift in Sources */,
+				C736275327DADEB100765DEF /* ProfileView.swift in Sources */,
+				C736274827DADBA300765DEF /* SignUpView.swift in Sources */,
+				C736276A27DAEFC900765DEF /* SearchViewController.swift in Sources */,
+				C736274627DADB5C00765DEF /* LoginViewModel.swift in Sources */,
+				C736276027DAE77A00765DEF /* CoreData.xcdatamodeld in Sources */,
 				C7935B0527D9C1B300AC9457 /* SplashView.swift in Sources */,
+				C736274D27DADD4E00765DEF /* ProfileViewController.swift in Sources */,
+				C736275627DADFD500765DEF /* Book.swift in Sources */,
+				C736274027DADAB500765DEF /* SignInViewController.swift in Sources */,
+				C736278127DAF2D000765DEF /* InfoDetailBookTableViewCell.swift in Sources */,
+				C736277727DAF1B700765DEF /* HomeViewModel.swift in Sources */,
+				C736276E27DAF04100765DEF /* SearchViewModel.swift in Sources */,
+				C736277D27DAF26C00765DEF /* BookTableViewCell.swift in Sources */,
+				C736275127DADE4300765DEF /* ProfileViewModel.swift in Sources */,
+				C736275A27DAE0F600765DEF /* UserModel.swift in Sources */,
 				C7935B0C27D9D35100AC9457 /* TabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +614,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C736275E27DAE77A00765DEF /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C736275F27DAE77A00765DEF /* CoreData.xcdatamodel */,
+			);
+			currentVersion = C736275F27DAE77A00765DEF /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C7935AD227D82CA900AC9457 /* Project object */;
 }
