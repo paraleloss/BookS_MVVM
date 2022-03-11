@@ -30,6 +30,7 @@ class SignInViewController: UIViewController {
     }
 
     private func setup() {
+        
         view.addSubview(signInView)
         signInView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -48,6 +49,7 @@ class SignInViewController: UIViewController {
 
 extension SignInViewController: SignInViewDelegate {
     func signUp() {
+        
         let signUpController = SignUpViewController(context: managedObjectContext)
         signUpController.modalPresentationStyle = .fullScreen
         signUpController.delegate  = self

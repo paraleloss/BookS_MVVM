@@ -23,7 +23,7 @@ class SplashView: UIView {
                             endAngle: deg2rad(CGFloat(0)),
                             clockwise: true)
         
-        UIColor.red.setFill()
+        UIColor.systemBlue.setFill()
         path.fill()
 
         UIColor.blue.setStroke()
@@ -39,7 +39,7 @@ class SplashView: UIView {
     }
     
     public func animateView(completion: @escaping() -> Void) {
-        UIView.animate(withDuration: 1, delay: 0.5, options: [.curveEaseInOut]) {
+        UIView.animate(withDuration: 2, delay: 0.5, options: [.curveEaseInOut]) {
             self.transform = CGAffineTransform(rotationAngle: self.deg2rad(180)).scaledBy(x: 2, y: 2)
             self.alpha = 0
         } completion: { _ in

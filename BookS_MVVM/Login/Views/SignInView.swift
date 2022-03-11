@@ -26,6 +26,7 @@ class SignInView: UIView {
     }
     
     private func setupView() {
+
         backgroundColor = UIColor.systemBackground
         addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false

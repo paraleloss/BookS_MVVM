@@ -59,7 +59,7 @@ class ProfileView: UIView {
             favLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor,
                                           constant: 20),
         ])
-        favLabel.text = "Favorites"
+        favLabel.text = "Tus libros"
         favLabel.font = UIFont.preferredFont(forTextStyle: .title1)
         
         addSubview(listBooksView)

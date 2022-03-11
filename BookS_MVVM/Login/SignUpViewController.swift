@@ -31,6 +31,7 @@ class SignUpViewController: UIViewController {
     }
 
     private func setup() {
+        
         view.addSubview(signUpView)
         signUpView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([

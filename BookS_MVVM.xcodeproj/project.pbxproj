@@ -35,6 +35,9 @@
 		C736277D27DAF26C00765DEF /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736277C27DAF26C00765DEF /* BookTableViewCell.swift */; };
 		C736277F27DAF2B400765DEF /* HeaderDetailBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736277E27DAF2B400765DEF /* HeaderDetailBookTableViewCell.swift */; };
 		C736278127DAF2D000765DEF /* InfoDetailBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736278027DAF2D000765DEF /* InfoDetailBookTableViewCell.swift */; };
+		C73627A427DB17D400765DEF /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73627A327DB17D400765DEF /* OnboardingViewController.swift */; };
+		C73627A727DB19BE00765DEF /* UIViewController+SetBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73627A627DB19BE00765DEF /* UIViewController+SetBackground.swift */; };
+		C73627A927DB273F00765DEF /* ContentOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73627A827DB273F00765DEF /* ContentOnboardingViewController.swift */; };
 		C749151C27D9E2A500C58386 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749151B27D9E2A500C58386 /* UIImageView.swift */; };
 		C7935ADE27D82CA900AC9457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935ADD27D82CA900AC9457 /* AppDelegate.swift */; };
 		C7935AE227D82CA900AC9457 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935AE127D82CA900AC9457 /* MainController.swift */; };
@@ -73,6 +76,9 @@
 		C736277C27DAF26C00765DEF /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		C736277E27DAF2B400765DEF /* HeaderDetailBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailBookTableViewCell.swift; sourceTree = "<group>"; };
 		C736278027DAF2D000765DEF /* InfoDetailBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailBookTableViewCell.swift; sourceTree = "<group>"; };
+		C73627A327DB17D400765DEF /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		C73627A627DB19BE00765DEF /* UIViewController+SetBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SetBackground.swift"; sourceTree = "<group>"; };
+		C73627A827DB273F00765DEF /* ContentOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentOnboardingViewController.swift; sourceTree = "<group>"; };
 		C749151B27D9E2A500C58386 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		C7935ADA27D82CA900AC9457 /* BookS_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookS_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7935ADD27D82CA900AC9457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -236,10 +242,28 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		C73627A227DB174C00765DEF /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C73627A327DB17D400765DEF /* OnboardingViewController.swift */,
+				C73627A527DB17E200765DEF /* Views */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C73627A527DB17E200765DEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C73627A827DB273F00765DEF /* ContentOnboardingViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C749151A27D9E28100C58386 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				C749151B27D9E2A500C58386 /* UIImageView.swift */,
+				C73627A627DB19BE00765DEF /* UIViewController+SetBackground.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -263,6 +287,7 @@
 		C7935ADC27D82CA900AC9457 /* BookS_MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C73627A227DB174C00765DEF /* Onboarding */,
 				C7935AEB27D82CAC00AC9457 /* Info.plist */,
 				C736273427DAD87A00765DEF /* Database */,
 				C736273E27DADA5500765DEF /* Login */,
@@ -371,6 +396,7 @@
 				C736276C27DAF01700765DEF /* EmptySearchView.swift in Sources */,
 				C736276527DAED4F00765DEF /* API.swift in Sources */,
 				C736277527DAF19000765DEF /* DetailBookViewController.swift in Sources */,
+				C73627A427DB17D400765DEF /* OnboardingViewController.swift in Sources */,
 				C736274227DADAF700765DEF /* SignUpViewController.swift in Sources */,
 				C736273927DAD9BB00765DEF /* CoreDataStack.swift in Sources */,
 				C749151C27D9E2A500C58386 /* UIImageView.swift in Sources */,
@@ -384,8 +410,10 @@
 				C736276227DAECB200765DEF /* BookFavoriteModel.swift in Sources */,
 				C736277327DAF10700765DEF /* HomeViewController.swift in Sources */,
 				C736277B27DAF24B00765DEF /* DetailBookView.swift in Sources */,
+				C73627A927DB273F00765DEF /* ContentOnboardingViewController.swift in Sources */,
 				C736273B27DAD9F300765DEF /* Managed.swift in Sources */,
 				C736275327DADEB100765DEF /* ProfileView.swift in Sources */,
+				C73627A727DB19BE00765DEF /* UIViewController+SetBackground.swift in Sources */,
 				C736274827DADBA300765DEF /* SignUpView.swift in Sources */,
 				C736276A27DAEFC900765DEF /* SearchViewController.swift in Sources */,
 				C736274627DADB5C00765DEF /* LoginViewModel.swift in Sources */,

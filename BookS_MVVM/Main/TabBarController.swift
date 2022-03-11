@@ -17,6 +17,7 @@ class TabBarController: UITabBarController {
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         let homeController = UINavigationController(rootViewController: HomeViewController(context: managedObjectContext))
         homeController.tabBarItem = UITabBarItem(title: "Home",

@@ -7,8 +7,6 @@
 
 import UIKit
 
-import UIKit
-
 protocol SignUpViewDelegate: AnyObject {
     func tapImage()
     func signUpUser(image: UIImage, username: String, password: String)
@@ -27,10 +25,12 @@ class SignUpView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
+        
         setupView()
     }
 
     private func setupView() {
+       
         backgroundColor = UIColor.systemBackground
         addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false

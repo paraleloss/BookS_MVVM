@@ -21,6 +21,7 @@ class MainController: UIViewController {
         super.viewDidAppear(animated)
         splashView.animateView {
             self.initialController()
+            
         }
     }
     
@@ -44,6 +45,7 @@ class MainController: UIViewController {
     }
     
     private func showHomeController() {
+    
         let tabBar = TabBarController(context: managedObjectContext)
         tabBar.modalPresentationStyle = .fullScreen
         present(tabBar, animated: false)
@@ -55,6 +57,7 @@ class MainController: UIViewController {
     }
     
     private func setup() {
+        self.setBackgroundImage("asd", contentMode: .scaleAspectFill)
         view.backgroundColor = UIColor.systemBackground
         view.addSubview(splashView)
         splashView.translatesAutoresizingMaskIntoConstraints = false
