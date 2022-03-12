@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     let activityIndicator = UIActivityIndicatorView()
     let viewModel = HomeViewModel()
     let listBooksView = ListBooksView()
+    let colorAlternativo = UIColor(red: 172/255, green: 158/255, blue: 131/255, alpha: 1.00)
+
     
     init(context: NSManagedObjectContext) {
         managedObjectContext = context
@@ -21,14 +23,15 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.systemBackground
-       // self.setBackgroundImage("a", contentMode: .scaleAspectFill)
+       
         setup()
         getTopBooks()
+        //self.setBackgroundImage2("a", contentMode: .scaleAspectFill)
     }
     
     private func setup() {
         //view.backgroundColor = UIColor.systemBackground
+        view.backgroundColor = colorAlternativo
         title = "Top Books"
         navigationController?.navigationBar.prefersLargeTitles = true
         view.addSubview(listBooksView)

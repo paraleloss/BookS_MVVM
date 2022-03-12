@@ -18,8 +18,8 @@ class SplashView: UIView {
     }
     
     override func draw(_ rect: CGRect) {
-        path = UIBezierPath(arcCenter: CGPoint(x: self.frame.size.width/2, y: self.frame.size.height/2),
-                            radius: self.frame.size.height/2,
+        path = UIBezierPath(arcCenter: CGPoint(x: self.frame.size.width/3, y: self.frame.size.height/3),
+                            radius: self.frame.size.height/3,
                             startAngle: deg2rad(CGFloat(180)),
                             endAngle: deg2rad(CGFloat(0)),
                             clockwise: true)
@@ -36,7 +36,7 @@ class SplashView: UIView {
     }
     
     private func deg2rad(_ number: CGFloat) -> CGFloat {
-        return number * .pi / 30
+        return number * .pi / 180
     }
     
     public func animateView(completion: @escaping() -> Void) {

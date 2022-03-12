@@ -30,6 +30,7 @@ class ProfileView: UIView {
     }
     
     private func setupView() {
+        self.backgroundColor = .clear
         addSubview(imageUserView)
         imageUserView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -58,7 +59,8 @@ class ProfileView: UIView {
             favLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             favLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 20),
         ])
-        favLabel.text = "Favoritos" + "⭐️"
+        favLabel.text = "Favoritos" + " " + "⭐️"
+        favLabel.textColor = .black
         favLabel.font = UIFont.preferredFont(forTextStyle: .title2)
         addSubview(listBooksView)
         listBooksView.translatesAutoresizingMaskIntoConstraints = false

@@ -11,6 +11,8 @@ class BookTableViewCell: UITableViewCell {
     let titleLabel = UILabel()
     let authorLabel = UILabel()
     let coverImageView = UIImageView()
+    let colorAlternativo = UIColor(red: 186/255, green: 182/255, blue: 163/255, alpha: 1.00)
+
     
     var book: DetailBook? {didSet{
         guard let book = book else {
@@ -23,8 +25,10 @@ class BookTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.backgroundColor = colorAlternativo
         setupView()
-        self.backgroundColor = .clear
+        
+        
     }
     
     private func setupView() {

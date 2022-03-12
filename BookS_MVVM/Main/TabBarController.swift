@@ -17,7 +17,7 @@ class TabBarController: UITabBarController {
     }
     
     override func viewDidLoad() {
-        
+        view.backgroundColor = .red
         super.viewDidLoad()
         let homeController = UINavigationController(rootViewController: HomeViewController(context: managedObjectContext))
         homeController.tabBarItem = UITabBarItem(title: "Home",

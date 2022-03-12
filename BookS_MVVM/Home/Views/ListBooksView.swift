@@ -15,12 +15,12 @@ class ListBooksView: UIView {
     weak var delegate: ListBooksViewDelegate?
     let tableView = UITableView()
     var books = [DetailBook]()
-    let colorAlternativo = UIColor(red: 51/255, green: 130/255, blue: 133/255, alpha: 1.00)
+    let colorAlternativo = UIColor(red: 172/255, green: 158/255, blue: 131/255, alpha: 1.00)
     
     init() {
         super.init(frame: .zero)
         setupView()
-        self.backgroundColor = .clear
+       // self.backgroundColor = .clear
     }
 
     public func fill(_ books: [DetailBook]) {
@@ -30,7 +30,7 @@ class ListBooksView: UIView {
     }
     
     private func setupView() {
-       // tableView.backgroundColor = colorAlternativo
+       //tableView.backgroundColor = colorAlternativo
         
         addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false

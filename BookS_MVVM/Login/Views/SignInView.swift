@@ -20,7 +20,10 @@ class SignInView: UIView {
     let loginButton = UIButton()
     let signUpButton = UIButton()
     let imageViewLogo = UIImageView()
+    var saludoLabel : UILabel?
     let colorBlue = UIColor(red: 89/255, green: 144/255, blue: 255/255, alpha: 1.00)
+    var width = UIScreen.main.bounds.width
+    var height = UIScreen.main.bounds.height
     
     
     override init(frame: CGRect) {
@@ -30,6 +33,29 @@ class SignInView: UIView {
     }
     
     private func setupView() {
+        //saludoLabel = UILabel(frame: CGRect(x: width/3, y: 30, width: width/3, height: 70))
+
+        let date = Date()
+        let calendar = Calendar.current
+        let hora = calendar.component(.hour, from: date)
+        print (hora)
+        
+
+        if hora > 0 && hora < 12{
+            titleLabel.text = "¡Buenos días!"
+        }else if hora >= 12 && hora < 19{
+            titleLabel.text = "¡Buenas tardes!"
+        }else if hora >= 19{
+            titleLabel.text = "¡Buenas noches!"
+        }
+        
+//        saludoLabel?.textAlignment = .left
+//        saludoLabel?.textColor = .white
+//        saludoLabel?.adjustsFontSizeToFitWidth = true
+//        saludoLabel?.font = .boldSystemFont(ofSize: 22)
+//        addSubview(saludoLabel!)
+//
+        
 
         addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -40,7 +66,7 @@ class SignInView: UIView {
             titleLabel.heightAnchor.constraint(equalToConstant: 30)
         ])
         titleLabel.textAlignment = .center
-        titleLabel.text = "Iniciar sesión"
+        //titleLabel.text = "Iniciar sesión"
         titleLabel.font = UIFont.preferredFont(forTextStyle: .title1)
         titleLabel.textColor = .white
         addSubview(usernameTextField)
