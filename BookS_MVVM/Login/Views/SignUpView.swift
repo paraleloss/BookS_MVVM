@@ -69,7 +69,7 @@ class SignUpView: UIView {
             usernameTextField.topAnchor.constraint(equalTo: imageUserView.bottomAnchor, constant: 40),
             usernameTextField.heightAnchor.constraint(equalToConstant: 40)
         ])
-        usernameTextField.placeholder = "username"
+        usernameTextField.placeholder = "usuario"
         usernameTextField.borderStyle = .roundedRect
         usernameTextField.delegate = self
         
@@ -81,7 +81,7 @@ class SignUpView: UIView {
             passwordTextField.topAnchor.constraint(equalTo: usernameTextField.bottomAnchor, constant: 20),
             passwordTextField.heightAnchor.constraint(equalToConstant: 40)
         ])
-        passwordTextField.placeholder = "password"
+        passwordTextField.placeholder = "contraseña"
         passwordTextField.borderStyle = .roundedRect
         passwordTextField.isSecureTextEntry = true
         passwordTextField.delegate = self

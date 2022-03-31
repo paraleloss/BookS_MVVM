@@ -48,7 +48,7 @@ class ProfileViewController: UIViewController {
             profileView.setInfo(name: info.name,
                                 image: info.image)
         }
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log out", style: .plain, target: self, action: #selector(logOut))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Salir", style: .plain, target: self, action: #selector(logOut))
         navigationItem.rightBarButtonItem?.tintColor = .white
     }
     

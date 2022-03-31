@@ -77,7 +77,7 @@ class SignInView: UIView {
             usernameTextField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 40),
             usernameTextField.heightAnchor.constraint(equalToConstant: 40)
         ])
-        usernameTextField.placeholder = "username"
+        usernameTextField.placeholder = "usuario"
         usernameTextField.borderStyle = .roundedRect
         usernameTextField.delegate = self
         addSubview(passwordTextField)
@@ -88,7 +88,7 @@ class SignInView: UIView {
             passwordTextField.topAnchor.constraint(equalTo: usernameTextField.bottomAnchor, constant: 20),
             passwordTextField.heightAnchor.constraint(equalToConstant: 40)
         ])
-        passwordTextField.placeholder = "password"
+        passwordTextField.placeholder = "contraseña"
         passwordTextField.borderStyle = .roundedRect
         passwordTextField.isSecureTextEntry = true
         passwordTextField.delegate = self
