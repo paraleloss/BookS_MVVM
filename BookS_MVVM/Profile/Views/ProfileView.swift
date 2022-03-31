@@ -59,7 +59,7 @@ class ProfileView: UIView {
             favLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             favLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 20),
         ])
-        favLabel.text = "Favoritos" + " " + "⭐️"
+        favLabel.text = "Favoritos" + " ⭐️"
         favLabel.textColor = .black
         favLabel.font = UIFont.preferredFont(forTextStyle: .title2)
         addSubview(listBooksView)
@@ -71,6 +71,7 @@ class ProfileView: UIView {
             listBooksView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
         ])
         listBooksView.delegate = self
+        listBooksView.tableView.backgroundColor = colorAlternativo
     }
 
     public func fillFavoritesBooks(_ books: [DetailBook]) {

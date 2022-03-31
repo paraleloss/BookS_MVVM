@@ -38,6 +38,7 @@
 		C73627A427DB17D400765DEF /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73627A327DB17D400765DEF /* OnboardingViewController.swift */; };
 		C73627A727DB19BE00765DEF /* UIViewController+SetBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73627A627DB19BE00765DEF /* UIViewController+SetBackground.swift */; };
 		C73627A927DB273F00765DEF /* ContentOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73627A827DB273F00765DEF /* ContentOnboardingViewController.swift */; };
+		C746FD6027F674AC00A3F275 /* UIColor+Extansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746FD5F27F674AB00A3F275 /* UIColor+Extansion.swift */; };
 		C749151C27D9E2A500C58386 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749151B27D9E2A500C58386 /* UIImageView.swift */; };
 		C7935ADE27D82CA900AC9457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935ADD27D82CA900AC9457 /* AppDelegate.swift */; };
 		C7935AE227D82CA900AC9457 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7935AE127D82CA900AC9457 /* MainController.swift */; };
@@ -79,6 +80,7 @@
 		C73627A327DB17D400765DEF /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		C73627A627DB19BE00765DEF /* UIViewController+SetBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SetBackground.swift"; sourceTree = "<group>"; };
 		C73627A827DB273F00765DEF /* ContentOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentOnboardingViewController.swift; sourceTree = "<group>"; };
+		C746FD5F27F674AB00A3F275 /* UIColor+Extansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extansion.swift"; sourceTree = "<group>"; };
 		C749151B27D9E2A500C58386 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		C7935ADA27D82CA900AC9457 /* BookS_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookS_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7935ADD27D82CA900AC9457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			children = (
 				C749151B27D9E2A500C58386 /* UIImageView.swift */,
 				C73627A627DB19BE00765DEF /* UIViewController+SetBackground.swift */,
+				C746FD5F27F674AB00A3F275 /* UIColor+Extansion.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				C736273927DAD9BB00765DEF /* CoreDataStack.swift in Sources */,
 				C749151C27D9E2A500C58386 /* UIImageView.swift in Sources */,
 				C736273D27DADA1000765DEF /* NSManagedObjectContext+Extensions.swift in Sources */,
+				C746FD6027F674AC00A3F275 /* UIColor+Extansion.swift in Sources */,
 				C7935AE227D82CA900AC9457 /* MainController.swift in Sources */,
 				C736277F27DAF2B400765DEF /* HeaderDetailBookTableViewCell.swift in Sources */,
 				C736275827DAE0A000765DEF /* DetailBook.swift in Sources */,

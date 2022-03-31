@@ -11,7 +11,6 @@ class BookTableViewCell: UITableViewCell {
     let titleLabel = UILabel()
     let authorLabel = UILabel()
     let coverImageView = UIImageView()
-    let colorAlternativo = UIColor(red: 186/255, green: 182/255, blue: 163/255, alpha: 1.00)
 
     
     var book: DetailBook? {didSet{
