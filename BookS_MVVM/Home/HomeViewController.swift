@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
     private func setup() {
         //view.backgroundColor = UIColor.systemBackground
         view.backgroundColor = colorAlternativo
-        title = "Top Books"
+        title = "Inicio"
         navigationController?.navigationBar.prefersLargeTitles = true
         view.addSubview(listBooksView)
         listBooksView.translatesAutoresizingMaskIntoConstraints = false
