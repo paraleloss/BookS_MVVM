@@ -20,7 +20,7 @@ class TabBarController: UITabBarController {
         view.backgroundColor = .red
         super.viewDidLoad()
         let homeController = UINavigationController(rootViewController: HomeViewController(context: managedObjectContext))
-        homeController.tabBarItem = UITabBarItem(title: "Home",
+        homeController.tabBarItem = UITabBarItem(title: "Inicio",
                                                  image: UIImage(systemName: "house"),
                                                  tag: 0)
         
