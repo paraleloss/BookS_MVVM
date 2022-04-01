@@ -25,7 +25,8 @@ class HomeViewModel {
                           image: book.volumeInfo.imageLinks?.thumbnail,
                           description: book.volumeInfo.description,
                           isFavorite: false,
-                          author: book.volumeInfo.authors.first ?? "")
+                          author: book.volumeInfo.authors.first ?? "",
+                          rating: book.volumeInfo.averageRating ?? 0)
     }
     
     public func getDetailsBook(_ book: DetailBook,
@@ -40,7 +41,8 @@ class HomeViewModel {
                           isFavorite: BookFavoriteModel.isBookFav(idBook: book.id,
                                                                   fromUser: user,
                                                                   from: context),
-                          author: book.author)
+                          author: book.author,
+                          rating: book.rating)
     }
 
     public func isBookFav(_ book: DetailBook,

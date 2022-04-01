@@ -37,7 +37,8 @@ class ProfileViewModel {
                           image: URL(string: book.image),
                           description: book.descriptionBook,
                           isFavorite: true,
-                          author: book.author)
+                          author: book.author,
+                          rating: Int(book.rating))
     }
     
     private func loadImageFromDiskWith(fileName: String) -> UIImage? {

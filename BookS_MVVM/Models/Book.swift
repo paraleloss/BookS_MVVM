@@ -16,6 +16,7 @@ struct Book: Codable {
         let authors: [String]
         let description: String?
         let imageLinks: Image?
+        let averageRating: Int?
     }
     
     struct Image: Codable {

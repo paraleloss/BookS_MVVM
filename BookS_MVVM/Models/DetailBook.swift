@@ -14,6 +14,7 @@ struct DetailBook {
     let description: String?
     var isFavorite: Bool
     var author: String
+    let rating: Int
     
     mutating func isFavorite(_ isFavorite: Bool) {
         self.isFavorite = isFavorite

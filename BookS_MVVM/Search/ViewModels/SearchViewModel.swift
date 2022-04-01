@@ -24,6 +24,7 @@ class SeachViewModel {
                           image: book.volumeInfo.imageLinks?.thumbnail,
                           description: book.volumeInfo.description,
                           isFavorite: false,
-                          author: book.volumeInfo.authors.first ?? "")
+                          author: book.volumeInfo.authors.first ?? "",
+                          rating: book.volumeInfo.averageRating ?? 0)
     }
 }

@@ -31,7 +31,7 @@ class ListBooksView: UIView {
     
     private func setupView() {
        //tableView.backgroundColor = colorAlternativo
-        
+        tableView.separatorStyle = .none
         addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -43,6 +43,7 @@ class ListBooksView: UIView {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(BookTableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
     }
     
     required init?(coder: NSCoder) {

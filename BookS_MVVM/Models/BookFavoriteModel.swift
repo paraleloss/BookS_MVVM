@@ -14,6 +14,7 @@ final class BookFavoriteModel: NSManagedObject, Managed {
     @NSManaged var title: String
     @NSManaged var author: String
     @NSManaged var descriptionBook: String
+    @NSManaged var rating: Int16
     
     static func insert(into context: NSManagedObjectContext,
                        fromUser: String,
@@ -25,6 +26,7 @@ final class BookFavoriteModel: NSManagedObject, Managed {
         bookModel.author = book.author
         bookModel.image = book.image?.absoluteString ?? ""
         bookModel.user = fromUser
+        bookModel.rating = Int16(book.rating)
     }
     
     static func fetch(fromUser: String, from context: NSManagedObjectContext ) -> [BookFavoriteModel] {

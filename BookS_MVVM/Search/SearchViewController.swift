@@ -33,7 +33,7 @@ class SearchViewController: UIViewController {
     }
     
     private func setup() {
-        title = "Search"
+        title = "Busqueda"
         
         navigationController?.navigationBar.prefersLargeTitles = true
         view.backgroundColor = UIColor.systemBackground
@@ -91,6 +91,7 @@ extension SearchViewController: UISearchResultsUpdating {
         guard let search = searchBar.text else {
             return
         }
+        saveSearch(search)
         activityIndicator.startAnimating()
         viewModel.searchBooks(search) { books in
             DispatchQueue.main.async {
@@ -103,6 +104,15 @@ extension SearchViewController: UISearchResultsUpdating {
                 self.listBooksView.fill(books)
             }
         }
+    }
+    
+    private func saveSearch(_ search: String) {
+        var searchs = [String]()
+        if let lastSearchs = UserDefaults.standard.object(forKey: "searchs") as? [String] {
+            searchs = lastSearchs
+        }
+        searchs.append(search)
+        UserDefaults.standard.set(searchs, forKey: "searchs")
     }
 }
 
